@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Banner from './components/Banner';
+import Home from './pages/Home';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
@@ -9,15 +9,9 @@ class App extends Component {
   }
 
   render() {
-    const { name, introText } = this.state
-
     return (
       <div className="App">
-        <Route path="/" render={() => <Banner name={name} introText={introText} />}></Route>
-        <Banner
-          name={name}
-          introText={introText}
-        />
+        <Route path="/" component={Home}></Route>
       </div>
     );
   }
