@@ -1,0 +1,72 @@
+$banner-introtext-fz: 24px!default;
+$banner-title-padding: 15px;
+$banner-bg: $black!default;
+
+.banner {
+  position: relative;
+  background: $banner-bg;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .content {
+    border: 5px solid $primary;
+    height: calc(100vh - 40px);
+
+  }
+
+  h1 {
+    padding: $banner-title-padding;
+    background: url('./assets/img/text-mask.jpg') top center no-repeat;
+    color: transparent;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 1px;
+    //animation: background-position 30s infinite;
+  }
+  p {
+    font-size: $banner-introtext-fz;
+    color: $primary;
+  }
+
+  ul {
+    li {padding: 0 20px;}
+    a {
+      color: rgba($white, .7);
+      font-size: 18px;
+      &:hover {
+        color: $primary;
+      }
+    }
+
+  }
+}
+
+@-webkit-keyframes background-position {
+  0% {
+    background-position: top center;
+  }
+  50% {
+    background-position: bottom center;
+  }
+  100% {
+    background-position: top center;
+  }
+}
+@keyframes background-position {
+  0% {
+    background-position: top center;
+  }
+
+
+  50% {
+    background-position: bottom center;
+  }
+  100% {
+    background-position: top center;
+  }
+}
