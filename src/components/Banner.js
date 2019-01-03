@@ -5,6 +5,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Nav from './Nav';
+
 const propTypes = {
   name: PropTypes.string,
   introText: PropTypes.string
@@ -15,12 +17,7 @@ const Banner = ({name, introText}) => {
     <div className="banner">
       <h1>My name is {name}</h1>
       <p>{introText}</p>
-
-      <ul class="d-flex pt-50">
-        <li><a href="/protfolio">Projects</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+      <Nav />
     </div>
   );
 }
