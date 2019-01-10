@@ -11,6 +11,18 @@ $banner-bg: $black!default;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  &.about {
+    background: $primary;
+  }
+  &.portfolio {
+    background: $warning;
+  }
+  &.contact {
+    background: $yellow;
+  }
+
+
+
 
   .content {
     border: 5px solid $primary;

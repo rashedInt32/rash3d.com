@@ -5,7 +5,11 @@ const Home = () => {
   const name = 'Rashed';
   const introText = "I'm a frontend developer.I make things.";
 
-  return <Banner name={name} introText={introText} />;
+  return (
+    <div className="react-transition swipe-right">
+      <Banner name={name} introText={introText} />;
+    </div>
+  )
 }
 
 export default Home;
