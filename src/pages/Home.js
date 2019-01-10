@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../layout/Layout';
 import Banner from '../components/Banner';
 
 const Home = () => {
@@ -6,9 +7,9 @@ const Home = () => {
   const introText = "I'm a frontend developer.I make things.";
 
   return (
-    <div className="react-transition swipe-right">
+    <Layout>
       <Banner name={name} introText={introText} />;
-    </div>
+    </Layout>
   )
 }
 

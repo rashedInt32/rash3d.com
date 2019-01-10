@@ -1,10 +1,13 @@
 import React from "react";
+import Layout from '../layout/Layout';
 
 const Portfolio = () => {
   return (
-    <div className="react-transition swipe-left about banner">
-      <h1>About</h1>
-    </div>
+    <Layout>
+      <div className="banner">
+        <h1>About</h1>
+      </div>
+    </Layout>
   );
 };
 
