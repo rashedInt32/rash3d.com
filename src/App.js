@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Router from './routes';
+import RouterComponent from './routes';
 import Header from './components/Header';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" onClick={this.getLocation}>
         <div className="transition-container">
           <Header />
-          <Router />
+          <RouterComponent />
         </div>
       </div>
     );

@@ -6,15 +6,15 @@ import Portfolio from '../pages/Portfolio';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 
-const Router = () => {
+const RouterComponent = () => {
   return (
     <Switch>
-      <Route path="/portfolio" component={Portfolio}></Route>
-      <Route path="/contact" component={Contact}></Route>
-      <Route path="/about" component={About}></Route>
-      <Route path="/" component={Home}></Route>
+      <Route path="/portfolio" name="Portfolio" render={(props) => <Portfolio {...props}/>}></Route>
+      <Route path="/contact" name="Contact" render={(props) => <Contact {...props}/>}></Route>
+      <Route path="/about" name="About" render={(props) => <About {...props} />}></Route>
+      <Route path="/" name="Home" render={(props) => <Home {...props}/>}></Route>
     </Switch>
   )
 }
 
-export default Router;
+export default RouterComponent;
