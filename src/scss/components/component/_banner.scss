@@ -1,6 +1,7 @@
-$banner-introtext-fz: 24px!default;
+$banner-introtext-fz: 24px !default;
 $banner-title-padding: 15px;
-$banner-bg: $black!default;
+$banner-bg: $black !default;
+$banner-nav-padding: 50px!default;
 
 .banner {
   position: relative;
@@ -11,48 +12,40 @@ $banner-bg: $black!default;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+
   &.about {
     background: $primary;
   }
+
   &.portfolio {
     background: $warning;
   }
+
   &.contact {
     background: $yellow;
   }
 
-
-
-
   .content {
     border: 5px solid $primary;
     height: calc(100vh - 40px);
-
   }
 
   h1 {
     padding: $banner-title-padding;
-    background: url('./assets/img/text-mask.jpg') top center no-repeat;
+    background: url("./assets/img/text-mask.jpg") top center no-repeat;
     color: transparent;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
     letter-spacing: 1px;
   }
+
   p {
     font-size: $banner-introtext-fz;
     color: $primary;
   }
 
-  ul {
-    li {padding: 0 20px;}
-    a {
-      color: rgba($white, .7);
-      font-size: 18px;
-      &:hover {
-        color: $primary;
-      }
-    }
+  .nav {
+    padding-top: $banner-nav-padding;
   }
 }
-

@@ -7513,10 +7513,16 @@ hr {
   .banner p {
     font-size: 24px;
     color: #6ACBB1; }
-  .banner ul li {
-    padding: 0 20px; }
-  .banner ul a {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 18px; }
-    .banner ul a:hover {
-      color: #6ACBB1; }
+  .banner .nav {
+    padding-top: 50px; }
+
+.nav li {
+  padding: 0 20px; }
+
+.nav a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px; }
+  .nav a.active {
+    color: #6ACBB1; }
+  .nav a:hover {
+    color: #6ACBB1; }

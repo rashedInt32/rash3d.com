@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
@@ -8,12 +8,12 @@ import Contact from '../pages/Contact';
 
 const Router = () => {
   return (
-    <>
-      <Route path="/" exact component={Home}></Route>
-      <Route path="/portfolio" exact component={Portfolio}></Route>
-      <Route path="/about" exact component={About}></Route>
-      <Route path="/contact" exact component={Contact}></Route>
-    </>
+    <Switch>
+      <Route path="/portfolio" component={Portfolio}></Route>
+      <Route path="/contact" component={Contact}></Route>
+      <Route path="/about" component={About}></Route>
+      <Route path="/" component={Home}></Route>
+    </Switch>
   )
 }
 

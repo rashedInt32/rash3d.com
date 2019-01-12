@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from '../layout/Layout';
 
-const Portfolio = () => {
+const About = () => {
   return (
     <Layout>
       <div className="banner">
@@ -11,4 +11,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default About;
