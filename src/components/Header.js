@@ -2,12 +2,11 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Nav from './Nav';
 
-const Header = ({location}) => {
+const Header = ({ location }) => {
   const pathname = location.pathname.split('/').join('');
 
-  const capitalize = string => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  const capitalize = string =>
+    string.charAt(0).toUpperCase() + string.slice(1);
 
   return (
     <header>
@@ -16,8 +15,7 @@ const Header = ({location}) => {
           <h4>{capitalize(pathname)}</h4>
           <Nav />
         </div>
-
-      </div>
+     </div>
     </header>
   );
 }
