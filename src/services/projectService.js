@@ -25,4 +25,4 @@ const projectData = [
   }
 ];
 
-export const getProject = () => projectData;
+export const getProjects = () => projectData;

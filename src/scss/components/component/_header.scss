@@ -1,6 +1,6 @@
 $header-padding: 30px 0 !default;
 $header-page-title-ls: 2px !default;
-$header-title-gradient: -webkit-linear-gradient(#a8ff78, #78ffd6);
+$header-title-gradient: linear-gradient(to right,#a8ff78, #78ffd6);
 
 header {
   position: relative;
