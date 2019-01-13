@@ -9,7 +9,7 @@ class App extends Component {
     const { location } = this.props;
 
     return (
-      <div className="App" onClick={this.getLocation}>
+      <div className="App">
         <div className="transition-container">
           {location.pathname !== '/' ? <Header /> : ''}
           <RouterComponent />
