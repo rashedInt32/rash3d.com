@@ -17,7 +17,7 @@ const Banner = ({name, introText}) => {
     <div className="banner">
       <h1>My name is {name}</h1>
       <p>{introText}</p>
-      <Nav />
+      <Nav/>
     </div>
   );
 }

@@ -1,12 +1,14 @@
 import React from "react";
 import Layout from '../layout/Layout';
 
-const About = ({location}) => {
-  return <Layout>
-      <div className="banner">
-      <h1>About {location.pathname}</h1>
+const About = () => {
+  return (
+    <Layout>
+      <div className="container">
+        <h1>About</h1>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
 
 export default About;

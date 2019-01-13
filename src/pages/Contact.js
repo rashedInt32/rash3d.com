@@ -4,7 +4,7 @@ import Layout from '../layout/Layout';
 const About = () => {
   return (
     <Layout>
-      <div className="banner">
+      <div className="container">
         <h1>Contact</h1>
       </div>
     </Layout>
