@@ -2,7 +2,7 @@ import React from 'react';
 
 const Layout = ({ children }) => {
   const style = {
-    animationDuration: '2s'
+    animationDuration: '1s'
   };
 
   return (

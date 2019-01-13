@@ -7542,3 +7542,17 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }
+
+.translateanim {
+  animation: translate .4s ease forwards;
+  transition: all .4s ease;
+  transform: translate3d(0, 20px, 0);
+  opacity: 0; }
+
+@keyframes translate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
