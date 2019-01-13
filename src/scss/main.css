@@ -7542,6 +7542,12 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }
+    header h4 .logo {
+      background: url("./assets/img/logo.svg");
+      width: 86px;
+      height: 45px;
+      background-size: cover;
+      display: block; }
 
 .translateanim {
   animation: translate .4s ease forwards;

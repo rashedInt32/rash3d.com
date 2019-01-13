@@ -1,18 +1,13 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Nav from './Nav';
 
-const Header = ({ location }) => {
-  const pathname = location.pathname.split('/').join('');
-
-  const capitalize = string =>
-    string.charAt(0).toUpperCase() + string.slice(1);
-
+const Header = () => {
   return (
     <header>
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
-          <h4>{capitalize(pathname)}</h4>
+          <h4><Link to="/" className="logo"></Link></h4>
           <Nav />
         </div>
      </div>
@@ -20,4 +15,4 @@ const Header = ({ location }) => {
   );
 }
 
-export default withRouter(Header);
+export default Header;
