@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <Banner name={name} introText={introText}/>;
+      <Banner name={name} introText={introText}/>
     </Layout>
   )
 }

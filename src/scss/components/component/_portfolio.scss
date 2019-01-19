@@ -1,14 +1,15 @@
+$translatey: 80px!default;
 .translateanim {
-  animation: translate .4s ease forwards;
-  transition: all .4s ease;
-  transform: translate3d(0, 20px, 0);
+  animation: translate .3s ease forwards;
+  @include transition(all .3s ease);
+  transform: translate3d(0, $translatey, 0);
   opacity: 0;
 }
 
 @keyframes translate {
   0% {
     opacity: 0;
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, $translatey, 0);
   }
 
   100% {

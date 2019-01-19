@@ -1,0 +1,22 @@
+$card-height: 300px !default;
+$card-radius: 3px !default;
+$card-bg: #1b202a !default;
+$card-letter-spacing: 1px;
+$card-margin: 30px !default;
+
+.card {
+  @include flex-center;
+  @include transition(all .3s ease);
+
+  position: relative;
+  width: 100%;
+  height: $card-height;
+  border-radius: $card-radius;
+  background: $card-bg;
+  letter-spacing: $card-letter-spacing;
+  margin-bottom: $card-margin;
+  cursor: pointer;
+
+
+  &:hover {background: darken($card-bg, 5%); letter-spacing: 2px;}
+}
