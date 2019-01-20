@@ -37,6 +37,7 @@ class Portfolio extends Component {
               key={project.id}>
               <Card
                 name={project.name}
+                bg={project.bg}
                 onClickCard={() => this.handleDetails(project)}
               />
             </div>
