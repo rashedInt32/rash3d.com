@@ -51,7 +51,6 @@ class Portfolio extends Component {
       </div>
     </Layout>;
   }
-
 }
 
 export default Portfolio;
