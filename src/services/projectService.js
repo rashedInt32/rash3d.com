@@ -5,7 +5,7 @@ const projectData = [
     description: `Englist Cut project done whilst working at Damage. `,
     url: "https://englishcut.com/",
     screenshots: [],
-    techuse: ["html", "scss", "jQuery"]
+    tech: ["html", "scss", "jQuery"]
   },
   {
     id: "2",
@@ -13,7 +13,7 @@ const projectData = [
     description: `I had a great opportunity to work with Cirkle project at Damage, which is the `,
     url: "https://www.cirkle.com/",
     screenshots: [],
-    techuse: ['html', 'scss', 'jQuery']
+    tech: ['html', 'scss', 'jQuery']
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ const projectData = [
     description: ``,
     url: "https://www.cirkle.com/",
     screenshots: [],
-    techuse: ['Ionic', 'Cordova', 'Angular', 'SCSS']
+    tech: ['Ionic', 'Cordova', 'Angular', 'SCSS']
   }
 ];
 
