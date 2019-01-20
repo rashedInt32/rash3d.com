@@ -6,6 +6,9 @@ const Portfolio = ({ projects = [] }) => {
   // Add transition delay to the project card
   const delay = (duration, index) => duration * index + 's';
 
+  // Grid wrapper classes
+  const classes = "col-md-3 col-sm-6 translateanim";
+
   const handleDetails = project => console.log(project);
 
   return <Layout>
@@ -14,7 +17,7 @@ const Portfolio = ({ projects = [] }) => {
           {projects.map((project, index) => {
             const style = { animationDelay: delay(0.3, index) };
             return <div
-              className="col-md-3 col-sm-6 translateanim"
+              className={classes}
               style={style}
               key={project.id}>
               <Card name={project.name} onClickCard={() => handleDetails(project)} />
