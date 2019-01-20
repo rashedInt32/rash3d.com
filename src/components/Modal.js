@@ -1,11 +1,13 @@
 import React from 'react';
 
 // should takes all the project data
-const Modal = ({data, isShow}) => {
-  const { url, name, description, screenshots, tech } = data;
+const Modal = ({data, isShow, onCloseModal}) => {
+  const { url, name, description, screenshots = [], tech=[] } = data;
+
   return (
     <div className={isShow ? 'modal show' : 'modal'}>
       <div className="modal-body">
+        <span onClick={onCloseModal}>Close</span>
         <div className="modal-content">
           <div className="row no-gutters">
             <div className="col-md-6">
@@ -17,7 +19,7 @@ const Modal = ({data, isShow}) => {
               <a href={url}>Url</a>
               <h1>{name}</h1>
               <p>{description}</p>
-              <p>Tech Use: {tech.map(item => <span>{item}</span>)}</p>
+              <p>Tech Use: {tech.map(item => <span key={item}>{item}</span>)} </p>
             </div>
           </div>
         </div>

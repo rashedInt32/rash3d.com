@@ -7,6 +7,7 @@
   background: rgba($black, .7);
   opacity: 0;
   visibility: hidden;
+  @include transition(all .3s ease);
   &.show {
     opacity: 1;
     visibility: visible;
@@ -15,5 +16,6 @@
     max-width: 700px;
     margin: 40px auto;
     padding: 40px;
+    background: $white;
   }
 }

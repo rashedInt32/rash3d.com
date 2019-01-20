@@ -7588,11 +7588,13 @@ header {
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all 0.3s ease; }
   .modal.show {
     opacity: 1;
     visibility: visible; }
   .modal .modal-body {
     max-width: 700px;
     margin: 40px auto;
-    padding: 40px; }
+    padding: 40px;
+    background: #FFFFFF; }
