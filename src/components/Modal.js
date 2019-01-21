@@ -8,7 +8,6 @@ import SliderComponent from './Slider';
 const Modal = ({ data, isShow, onCloseModal }) => {
   const { url, name, description, screenshots = [], tech = [] } = data;
 
-
   return <div className={isShow ? "modal show" : "modal"}>
     <div className="modal-body">
       <MaterialIcon icon="close" onClick={onCloseModal} className="material-icons modal-close" />
@@ -24,7 +23,7 @@ const Modal = ({ data, isShow, onCloseModal }) => {
           <p className="tech-use">
             Tech Use: {tech.map(item => (
               <span key={item}>{item}</span>
-            ))}{" "}
+            ))}
           </p>
         </div>
 

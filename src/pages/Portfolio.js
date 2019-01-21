@@ -19,7 +19,7 @@ class Portfolio extends Component {
 
   // Close modal
   closeModal = () =>
-    this.setState({ showModal: false });
+    this.setState({ showModal: false, data: {} });
 
   render() {
     const { projects } = this.props;
