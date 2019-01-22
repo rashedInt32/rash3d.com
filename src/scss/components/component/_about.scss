@@ -1,11 +1,21 @@
+$about-padding: 50px !default;
+$about-img-gradient: radial-gradient(circle closest-side, rgba($black, 0), rgba($black, 1)) !default;
+
+$about-margin: 30px;
+$about-text-fz: 20px;
+$about-text-lh: 34px;
+$about-text-opacity: 0.7;
+$about-skill-padding: 10px;
+
 .about {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: $about-padding;
 
   .image-content {
     position: sticky;
     top: 0;
     width: 100%;
+
     &:before {
       content: '';
       position: absolute;
@@ -14,13 +24,10 @@
       width: 100%;
       height: 100%;
       z-index: 4;
-      background-image:
-      radial-gradient(
-        circle closest-side,
-        rgba($black, 0),rgba($black, 1)
-      );
+      background-image: $about-img-gradient;
     }
   }
+
   img {
     position: relative;
     z-index: 3;
@@ -29,17 +36,16 @@
 
   p {
     color: $white;
-    opacity: .7;
-    margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 34px;
+    opacity: $about-text-opacity;
+    margin-bottom: $about-margin;
+    font-size: $about-text-fz;
+    line-height: $about-text-lh;
   }
 
   span {
     display: block;
-    padding-bottom: 10px;
-    font-size: 20px;
-    line-height: 34px;
+    padding-bottom: $about-skill-padding;
+    font-size: $about-text-fz;
+    line-height: $about-text-lh;
   }
-
 }
