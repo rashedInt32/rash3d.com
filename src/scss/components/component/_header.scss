@@ -5,6 +5,7 @@ $header-title-gradient: linear-gradient(to right,#a8ff78, #78ffd6);
 header {
   position: relative;
   padding: $header-padding;
+  margin-bottom: 30px;
 
   h4 {
     letter-spacing: $header-page-title-ls;
