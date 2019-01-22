@@ -7550,7 +7550,7 @@ header {
       display: block; }
 
 .translateanim {
-  animation: translate .3s ease forwards;
+  animation: translate .5s ease forwards;
   transition: all 0.3s ease;
   transform: translate3d(0, 40px, 0);
   opacity: 0; }
@@ -7559,8 +7559,6 @@ header {
   0% {
     opacity: 0;
     transform: translate3d(0, 40px, 0); }
-  20% {
-    opacity: 1; }
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
@@ -7651,3 +7649,13 @@ header {
         margin-top: 15px; }
         .modal .modal-body .modal-content .tech-use span {
           margin-right: 10px; }
+
+.about {
+  position: relative; }
+  .about .image-content {
+    position: relative;
+    width: 100%; }
+    .about .image-content:before {
+      content: ''; }
+  .about img {
+    width: 100%; }

@@ -1,6 +1,6 @@
 $translatey: 40px!default;
 .translateanim {
-  animation: translate .3s ease forwards;
+  animation: translate .5s ease forwards;
   @include transition(all .3s ease);
   transform: translate3d(0, $translatey, 0);
   opacity: 0;
@@ -11,7 +11,6 @@ $translatey: 40px!default;
     opacity: 0;
     transform: translate3d(0, $translatey, 0);
   }
-  20%{opacity: 1;}
 
   100% {
     opacity: 1;

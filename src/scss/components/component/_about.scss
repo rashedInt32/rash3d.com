@@ -1,0 +1,14 @@
+.about {
+  position: relative;
+
+  .image-content {
+    position: relative;
+    width: 100%;
+    &:before {
+      content: ''
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

@@ -3,7 +3,6 @@ import MaterialIcon from 'material-icons-react';
 import SliderComponent from './Slider';
 
 
-
 // should takes all the project data
 const Modal = ({ data, isShow, onCloseModal }) => {
   const { url, name, description, screenshots = [], tech = [] } = data;
