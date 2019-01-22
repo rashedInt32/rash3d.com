@@ -63,7 +63,7 @@ $modal-body-padding: 0px !default;
         background: $black;
         flex: 0 0 50px;
         @include flex-center;
-        .material-icons {color: $white; position: relative;top: 3px;}
+        .material-icons {color: $primary;}
       }
       h4 {color: $black; padding-bottom: 20px;}
       p {
