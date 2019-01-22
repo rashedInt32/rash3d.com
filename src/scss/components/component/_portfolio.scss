@@ -1,13 +1,16 @@
 $translatey: 40px!default;
+$portfolio-padding: 50px!default;
+$portfolio-sub-title-fz: 20px!default;
+$portfolio-sub-opacity: .7!default;
 
 .portfolio {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: $portfolio-padding;
 
   .sub {
     color: $white;
-    opacity: .7;
-    font-size: 20px;
+    opacity: $portfolio-sub-opacity;
+    font-size: $portfolio-sub-title-fz;
   }
 }
 .translateanim {
