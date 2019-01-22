@@ -27,7 +27,10 @@ class Portfolio extends Component {
     const classes = "col-md-3 col-sm-6 translateanim";
 
     return <Layout>
-      <div className="container">
+      <div className="container portfolio">
+        <h3 className="pb-10">Portfolio</h3>
+        <p className="pb-30 sub">Here are some of my previous works. Hope you like it.</p>
+
         <div className="row">
           {projects.map((project, index) => {
             const style = { animationDelay: this.delay(0.3, index) };

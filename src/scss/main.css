@@ -7550,6 +7550,14 @@ header {
       background-size: cover;
       display: block; }
 
+.portfolio {
+  position: relative;
+  padding-bottom: 50px; }
+  .portfolio .sub {
+    color: #FFFFFF;
+    opacity: .7;
+    font-size: 20px; }
+
 .translateanim {
   animation: translate .5s ease forwards;
   transition: all 0.3s ease;

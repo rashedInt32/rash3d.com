@@ -1,4 +1,15 @@
 $translatey: 40px!default;
+
+.portfolio {
+  position: relative;
+  padding-bottom: 50px;
+
+  .sub {
+    color: $white;
+    opacity: .7;
+    font-size: 20px;
+  }
+}
 .translateanim {
   animation: translate .5s ease forwards;
   @include transition(all .3s ease);
