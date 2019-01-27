@@ -7,7 +7,7 @@ $about-text-lh: 34px;
 $about-text-opacity: 0.7;
 $about-skill-padding: 10px;
 
-.about {
+.content {
   position: relative;
   padding-bottom: $about-padding;
 
@@ -38,6 +38,10 @@ $about-skill-padding: 10px;
     color: $white;
     opacity: $about-text-opacity;
     margin-bottom: $about-margin;
+    font-size: $about-text-fz;
+    line-height: $about-text-lh;
+  }
+  a {
     font-size: $about-text-fz;
     line-height: $about-text-lh;
   }

@@ -4,7 +4,7 @@ import avatar from '../assets/img/avatar.jpg';
 
 const About = () => {
   return <Layout>
-      <div className="container about">
+      <div className="container content">
         <div className="row">
           <div className="col-md-4 offset-md-1 order-md-last">
             <div className="image-content">

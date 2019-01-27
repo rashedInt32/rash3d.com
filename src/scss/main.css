@@ -7520,7 +7520,7 @@ hr {
     font-size: 24px;
     color: #6ACBB1; }
   .banner .nav {
-    padding-top: 50px; }
+    padding-top: 30px; }
 
 .nav li {
   padding: 0 20px; }
@@ -7657,14 +7657,14 @@ header {
         .modal .modal-body .modal-content .tech-use span {
           margin-right: 10px; }
 
-.about {
+.content {
   position: relative;
   padding-bottom: 50px; }
-  .about .image-content {
+  .content .image-content {
     position: sticky;
     top: 0;
     width: 100%; }
-    .about .image-content:before {
+    .content .image-content:before {
       content: '';
       position: absolute;
       top: 0;
@@ -7673,17 +7673,20 @@ header {
       height: 100%;
       z-index: 4;
       background-image: radial-gradient(circle closest-side, rgba(14, 14, 14, 0), #0e0e0e); }
-  .about img {
+  .content img {
     position: relative;
     z-index: 3;
     width: 100%; }
-  .about p {
+  .content p {
     color: #FFFFFF;
     opacity: 0.7;
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 34px; }
-  .about span {
+  .content a {
+    font-size: 20px;
+    line-height: 34px; }
+  .content span {
     display: block;
     padding-bottom: 10px;
     font-size: 20px;
